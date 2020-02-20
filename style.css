@@ -1,158 +1,349 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, serif;
 }
 
-div.jumbotron.text-center {
-    background: url('hero.gif') !important; 
-    background-size: cover !important;
-    width: 100%; 
-    height: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover;
-}
-
-header {
-    background-color: #000;
-}
-
-section {
-    margin-top: 80px;
-}
-
-div.container.text-center {
-    padding: 0 0 30px 0;
-}
-
-img.rounded-circle {
-    height: 150px;
-}
-
-.about-me-part-one {
-    margin-top: 30px;
-}
-
-.fas {
-    font-size: 3em;
-}
-
-.section-two h4 {
-    margin-top: 30px;
-}
-
-.hero-text h1, h4 {
-    color: #fff;
-}
-
-.hero-text h1 {
-    margin-top: 50px;
-}
-
-.row img {
-    width: 70%;
-    margin-top: 80px;
-}
-
-.row h5 {
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
-
-#correctionimage h5 {
-    padding-top: 25px;
-}
-
-.pimages {
-    margin-top: 100px;
-}
-
-.section-two h4 {
-    color: #000;
-}
-
-.dss {
-    margin-top: 10px;
-}
-
-.tbs {
-    margin-top: 25px;
-}
-
-.tbs h5 {
-    margin-top: 45px !important;
-}
-
-.shopify {
-    margin-top: -35px;
-}
-
-.shopify h5 {
-    margin-top: -10px;
-}
-
-.woo {
-    margin-top: 30px;
-}
-
-.amazon h5 {
-    margin-top: 10px;
-}
-
-html,body
-{
+html,body {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
     overflow-x: hidden; 
 }
 
-div.text-center.col-sm-4 {
-    margin-bottom: 30px;
+div.jumbotron.text-center {
+    background: url(hero.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
 }
 
-div.text-center.col-sm-4 h4 {
+header {
+    background-color: #000000;
+}
+
+img.rounded-image {
+    height: 150px;
+    border-radius: 100px;
+}
+
+.hero {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.hero-text {
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+p {
+    padding: 20px;
+}
+
+.row {
     margin-top: 50px;
 }
 
-div.text-center.col-sm-4 h4 p {
-    margin-top: 25px;
-}
-
-.experience {
-    letter-spacing: 0.5px
-}
-
-.whitesmoke {
-    background-color: whitesmoke;
-}
-
-.tools {
-    margin-top: 50px;
-    padding: 20px 0 30px 0;
-}
-
-.tools i {
+.fas{
+    font-size: 3em;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.rounded {
-   width: 200px;
+.chart, .laptop, .metrics {
+    color: #ffffff;
 }
 
-.profile h5 {
-    margin-top: -20px;
+.chart {
+    background-color: #28a745;
+}
+
+.laptop {
+    background-color: #f0ad4e;
+}
+
+.metrics {
+    background-color: #2185C5;
+}
+
+.about h4 {
+    margin-top: 40px;
+}
+
+div.col-sm-4 {
+    padding-bottom: 50px;
+}
+
+.about-icons {
+    border: 1px solid #e8e8e8;
 }
 
 /*ANIMATION*/
 
-.consulting, .metrics {
+.consulting, .metric {
     opacity: 0;
 }
 
-.consulting.animated, .metrics.animated {
+.consulting.animated, .metric.animated {
     opacity: 1;
+}
+
+.fishingbookie, .dss, .woocommerce  {
+  margin-top: 80px;
+  max-width: 70% !important;
+}
+
+.amazon {
+    max-width: 70% !important;
+    margin-top: 60px;
+}
+
+ .shopify {
+    max-width: 70% !important;
+    margin-top: 40px;
+}
+
+.tbs {
+    max-width: 70% !important;
+    margin-top: 90px;
+}
+
+
+.flip-box-back p {
+    margin-top: 20px;
+}
+
+.btn-warning {
+    color: #fff !important;
+    background-color: #f0ad4e !important;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.linked {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+/*Image Flips/*
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-box {
+  margin: 0 auto;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #2185C5;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+
+/*Animation what I do*/
+
+.slider {
+    margin-top: 80px;
+}
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* CONTACT ANIMATION */
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
 }
 
 /*MOBILE QUERIES*/
@@ -160,7 +351,7 @@ div.text-center.col-sm-4 h4 p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
     
     h2 {
@@ -170,9 +361,5 @@ div.text-center.col-sm-4 h4 p {
     h4 {
         font-size: 1em;
     }
-    
-    p {
-        text-align: justify;
-        padding: 0 20px 0 20px;
-    }
 }
+
