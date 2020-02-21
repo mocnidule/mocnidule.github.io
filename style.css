@@ -12,7 +12,7 @@ html,body {
 }
 
 div.jumbotron.text-center {
-    background: url(hero.gif) no-repeat center center fixed;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -362,4 +362,32 @@ div.col-sm-4 {
         font-size: 1em;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
