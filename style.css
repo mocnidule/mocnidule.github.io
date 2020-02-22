@@ -324,27 +324,6 @@ div.col-sm-4 {
 
 /* CONTACT ANIMATION */
 
-@-webkit-keyframes swinging{
-    0%{-webkit-transform: rotate(10deg);}
-    50%{-webkit-transform: rotate(-5deg)}
-    100%{-webkit-transform: rotate(10deg);}
-}
- 
-@keyframes swinging{
-    0%{transform: rotate(10deg);}
-    50%{transform: rotate(-5deg)}
-    100%{transform: rotate(10deg);}
-}
- 
-.swingimage{
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-    animation: swinging 3.5s ease-in-out forwards infinite;
-    width: 150px;
-    height: 150px;
-    margin-top: 50px;
-}
 
 /*MOBILE QUERIES*/
 
@@ -361,25 +340,81 @@ div.col-sm-4 {
     h4 {
         font-size: 1em;
     }
+    
+    .nonresponsive {
+        display: none;
+    }
+    
+   
+.mobilefb, .mobilewoo, .mobiledss {
+    margin-top: 140px !important;
+}
+
+.mobiletbs {
+    margin-top: 150px !important;
+}
+
+.mobileamazon {
+    margin-top: 120px !important;
+}
+
+.mobileshopify {
+    margin-top: 100px !important;
+}
+    
+.carousel-indicators li {
+        background-color: #000 !important;
+}
+    
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.pseudo_border {
+    position:relative;
+    display:inline-block;
+}
+.pseudo_border:after {
+    content:'';
+    position:absolute;
+    left:0;right:0;
+    top:100%;
+    margin: 15px auto;
+    width:50%;
+    height:3px;
+    background:#2185C5;
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile-carousel {
+        display: none;
+    }
 }
 
 
+.row li {
+  width: 33.3%;
+  float: left;
+}
 
+.contact {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ul {
+    list-style-type: none;
+}
 
 
 

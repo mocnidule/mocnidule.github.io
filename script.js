@@ -292,12 +292,6 @@ canvas.addEventListener('mousemove', function(e){
 });
 
 
-
-
-
-
-
-
 //What I do animated
 
 $(document).ready(function() {
@@ -319,8 +313,6 @@ $(document).ready(function() {
 });
 
 
-
-
 //Tools I use animated fully responsive
 
 $(document).ready(function(){
@@ -328,7 +320,7 @@ $(document).ready(function(){
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 500,
         arrows: false,
         dots: false,
         pauseOnHover: false,
