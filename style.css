@@ -330,15 +330,15 @@ div.col-sm-4 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 1.5em !important;
+        font-size: 1.2em !important;
     }
     
     h2 {
-        font-size:  1.5em;
+        font-size:  1.2em;
     }
     
     h4 {
-        font-size: 1em;
+        font-size: 0.5em;
     }
     
     .nonresponsive {
