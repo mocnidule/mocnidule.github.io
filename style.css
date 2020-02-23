@@ -330,11 +330,11 @@ div.col-sm-4 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 1.25em !important;
+        font-size: 1.5em !important;
     }
     
     h2 {
-        font-size:  1.25em;
+        font-size:  1.5em;
     }
     
     h4 {
@@ -363,7 +363,12 @@ div.col-sm-4 {
 }
     
 .carousel-indicators li {
-        background-color: #000 !important;
+    background-color: #000 !important;
+}
+    
+.contact {
+  height: 75px;
+  width: 75px;
 }
     
 }
